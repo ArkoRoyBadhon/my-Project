@@ -1,0 +1,102 @@
+$overlay: rgba(0,0,0,0.7);
+
+.navbar {
+
+    .nav-item{
+        padding-left: 1rem;
+
+        .nav-link{
+            text-transform: uppercase;
+        }
+    }
+}
+
+.carousel-item {
+height: 450px;
+
+}
+.carousel-img-1 {
+    background: url('../img/photoshop.jpg');
+    background-size: cover;
+}
+.carousel-img-2 {
+    background: url('../img/white\ car.jpg');
+    background-size: cover;
+}
+.carousel-img-3 {
+    background: url('../img/car\ black\ crop.jpg');
+    background-size: cover;
+}
+
+#home-icon {
+    .fa {
+        font-size: 50px;
+    }
+}
+
+#get-start{
+    height: 300px;
+    background: url('../img/car\ black\ crop.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    .dark-overlay {
+        background: $overlay;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+    }
+}
+
+#home-video{
+    height: 300px;
+    background: url('../img/car\ black\ crop.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    .dark-overlay {
+        background: $overlay;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+
+        .fa{
+            font-size: 50px;
+        }
+    }
+}
+
+#gallery{
+    img{
+        min-height: 200px;
+    }
+}
+
+.copyright{
+    background: #000;
+    color: #fff;
+}
+
+
+@media(max-width: 767px){
+    .nav-item{
+      padding-left: 0 !important;
+    }
+    #get-started{
+      min-heigth: 300px;
+    }
+  }
+  @media(max-width: 480px){
+    .carousel{
+      h2{
+        font-size:2.5rem;
+      }
+    }
+    #get-started{
+      min-height: 390px;
+    }
+  }
